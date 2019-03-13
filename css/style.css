@@ -1,0 +1,55 @@
+/* prata-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Prata';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/prata-v9-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local('Prata Regular'), local('Prata-Regular'),
+       url('../fonts/prata-v9-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/prata-v9-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/prata-v9-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/prata-v9-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/prata-v9-latin_cyrillic-regular.svg#Prata') format('svg'); /* Legacy iOS */
+}
+/* pt-sans-regular - latin */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/pt-sans-v10-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('PT Sans'), local('PTSans-Regular'),
+       url('../fonts/pt-sans-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pt-sans-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pt-sans-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/pt-sans-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/pt-sans-v10-latin-regular.svg#PTSans') format('svg'); /* Legacy iOS */
+}
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Prata', sans-serif;
+  font-size: 24px;
+}
+
+h2 {
+  font-family: 'Prata', sans-serif;
+  font-size: 18px;
+  
+}
+
+body{
+  width: 320px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.header-promo__wrap {
+  background-image: url(../image/bg_main.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.total-wrap {
+  width: 300px;
+}
