@@ -37,11 +37,13 @@ h2 {
   font-family: 'Prata', sans-serif;
   font-size: 30px;
   color: #000;
+  font-weight: normal;
 }
 
 h3 {
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
+  font-weight: normal;
 }
 p{
   font-size: 16px;
@@ -61,7 +63,6 @@ body{
 } /*НЕпонятно, почему исчезает logo*/
 
 .header {
-  position: fixed;
   width: 100%;
   top: 0px;
   z-index: 1;
@@ -73,6 +74,8 @@ body{
 }
 
 .logo {
+  z-index: 1;
+  position: absolute;
 }
 
 .logo-text {
@@ -82,10 +85,14 @@ body{
 }
 
 .main-menu {
+  position: relative;
 }
 
 .main-menu__list {
-  display: none;
+  z-index: 1;
+  position: absolute;
+  display: block;
+  /*display: none;*/
 }
 
 .main-menu__item {
@@ -104,6 +111,7 @@ body{
   background-size: cover;
   height: 100vh;
   position: relative;
+  top: -50px;
   z-index: 0;
   min-height: 600px;
 }
@@ -126,13 +134,14 @@ body{
   width: 210px;
 }
 .promo-button__wrap {
+  
+}
+.promo-button{
+  border: 0;
   text-align: center;
   width: 290px;
   height: 50px;
   background-color: #ffd700;
-  
-}
-.promo-button{
   padding: 15px 0; /*можно ли выровнять по вертикали без паддингов?*/
   color: #fff;
   font-size: 18px;
@@ -204,5 +213,140 @@ body{
   color: black;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+/*ADVANTAGES*/
+.advantages {
+}
+
+.advantages__title-wrap {
+  margin: 10px 0px 20px;
+  padding: 0 15px;
+  border-top: 2px solid #ffd700;
+  border-bottom: 2px solid #ffd700;
+}
+
+.advantages__title{
+  margin: 0;
+}
+
+.advantages__list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.advantages__item-content{
+  width: 240px;
+  padding: 35px 10px;
+}
+
+.advantages__item-title {
+  margin: 0;
+}
+
+.advantages__item-text {
+  margin: 0;
+}
+
+.xsmall-hidden {
+  display: none;
+}
+
+.advantages__item--studio {
+  margin-right: 10px;
+  width: 75%;
+}
+
+.advantages__item--button{
+  padding: 10px 20px;
+  bottom: -52px;
+  right: -88px;
+  position: absolute;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  margin: 0;
+  height: 39%;
+  width: 150px;
+  background-color: #ffd700;
+}
+
+.advantages__button {
+  text-align: left;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/*VIDEO*/
+.video
+.video__title-wrap {
+  margin: 10px 0px 20px;
+  padding: 0 15px;
+  border-top: 2px solid #ffd700;
+  border-bottom: 2px solid #ffd700;
+}
+
+.video__title {
+  margin: 0;
+}
+.video__sliden-slick
+.video__slider {
+}
+.video__slider-img {
+  width: 290px;
+}
+
+/*CONTACTS*/
+.contacts
+.contacts__content
+.contacts__title-wrap {
+  margin: 10px 0px 20px;
+  padding: 0 15px;
+  border-top: 2px solid #ffd700;
+  border-bottom: 2px solid #ffd700;
+}
+
+.contacts__title{
+  margin: 0;
+}
+
+.contacts__text-wrap {
+  margin: 15px;
+}
+.contacts__text {
+  margin: 0;
+  font-style: normal;
+  color: #000;
+}
+.contacts__tel {
+  margin: 0;
+  text-decoration: none;
+  color: #000;
+}
+.contacts__map
+.contacts__button-wrap {
+}
+.contacts__button{
+  border: 0;
+  text-align: center;
+  width: 290px;
+  height: 50px;
+  background-color: #ffd700;
+  padding: 15px 0; /*можно ли выровнять по вертикали без паддингов?*/
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.contacts__form {
+  display: none;
 }
 /*__________________________________________________________*/
