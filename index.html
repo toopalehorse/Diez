@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Школа Diez</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -47,9 +48,11 @@
 
       <section class="promo">
         <div class="container">
+
           <div class="promo__content">
-            <h1 class="promo__title"><span>Школа музыкального искусства</span></h1>
-            <p class="promo__text">Научим петь, играть на инструментах, получать удовольстивие от музыки и не бояться сцены</p>
+            <h1 class="promo__title"><span class="xsmall-hidden">Diez - школа </span> <span class="medium-hidden">Школа </span>музыкального искусства</h1>
+            <p class="promo__text medium-hidden">Научим петь, играть на инструментах, получать удовольстивие от музыки и не бояться сцены</p>
+            <p class="promo__text xsmall-hidden">Научим петь, играть на инструментах, не бояться сцены и получать удовольстивие от музыки</p>
           </div>
 
           <div class="promo__form"></div>
@@ -57,65 +60,74 @@
           <div class="promo-button__wrap">
             <button class="promo-button">Вводный урок</a>
           </div>
+
         </div>
       </section>
 
       <section class="directions">
+
         <div class="container">
+
           <div class="directions__title-wrap">
             <h2 class="directions__title">Растим музыкантов</h2>
           </div>
 
           <div class="directions__list">
+            
+            <div class="directions-row">
 
-            <div class="directions__item directions__item--singing" style="background-image: url(image/directions_card_img_2.jpg); background-size: cover;">
-              <div class="directions__item-content">
-                <h3 class="directions__item-title">Вокал</h3>
-                <p class="directions__item-text xsmall-hidden">Академический, рок, эстрадный, джазовый  
-                </p>
-                <p class="directions__item-text medium-hidden">Пой как Селин Дион и Эми Вайнхаус  
-                </p>
+              <div class="directions__item directions__item--singing" style="background-image: url(image/directions_card_img_2.jpg); background-size: cover; background-position: center;">
+                <div class="directions__item-content">
+                  <h3 class="directions__item-title">Вокал</h3>
+                  <p class="directions__item-text xsmall-hidden">Академический, рок, эстрадный, джазовый  
+                  </p>
+                  <p class="directions__item-text medium-hidden">Пой как Селин Дион и Эми Вайнхаус  
+                  </p>
+                </div>
               </div>
+
+              <div class="directions__item directions__item--guitar" style="background-image: url(image/directions_card_img_1.jpg); background-size: cover;">
+                <div class="directions__item-content">
+                  <h3 class="directions__item-title">Гитара</h3>
+                  <p class="directions__item-text xsmall-hidden">Хочешь играть как Джимми Хендрикс, Би Би Кинг или Андрес Сеговия - мы научим 
+                  </p>
+                  <p class="directions__item-text xsmall-hidden">1 урок от 800Р 
+                  </p>
+                  <p class="directions__item-text">Начни играть, как Джими Хендрикс 
+                  </p>
+                </div>
+              </div>
+
             </div>
 
-            <div class="directions__item directions__item--guitar" style="background-image: url(image/directions_card_img_1.jpg); background-size: cover;">
-              <div class="directions__item-content">
-                <h3 class="directions__item-title">Гитара</h3>
-                <p class="directions__item-text xsmall-hidden">Хочешь играть как Джимми Хендрикс, Би Би Кинг или Андрес Сеговия - мы научим 
-                </p>
-                <p class="directions__item-text xsmall-hidden">1 урок от 800Р 
-                </p>
-                <p class="directions__item-text">Начни играть, как Джими Хендрикс 
-                </p>
+            <div class="directions-row">
+              <div class="directions__item directions__item--piano" style="background-image: url(image/directions_card_img_3.jpg); background-size: cover;">
+                <div class="directions__item-content">
+                  <h3 class="directions__item-title">Фортепиано</h3>
+                  <p class="directions__item-text xsmall-hidden">Академический, рок, эстрадный, джазовый</p>
+                  <p class="directions__item-text">Чувствуй клавиши, как Людовико Эйнауди</p>
+                </div>
               </div>
-            </div>
 
-            <div class="directions__item directions__item--piano" style="background-image: url(image/directions_card_img_3.jpg); background-size: cover;">
-              <div class="directions__item-content">
-                <h3 class="directions__item-title">Фортепиано</h3>
-                <p class="directions__item-text xsmall-hidden">Академический, рок, эстрадный, джазовый</p>
-                <p class="directions__item-text">Чувствуй клавиши, как Людовико Эйнауди</p>
+              <div class="directions__item directions__item--lections xsmall-hidden" style="background-image: url(image/directions_card_img_4.jpg); background-size: cover;">
+                <div class="directions__item-content">
+                  <h3 class="directions__item-title">Лекции</h3>
+                  <p class="directions__item-text">Подтяни свои знания в теории музыки  </p>
+                </div>
               </div>
-            </div>
 
-            <div class="directions__item directions__item--lections xsmall-hidden" style="background-image: url(image/directions_card_img_4.jpg); background-size: cover;">
-              <div class="directions__item-content">
-                <h3 class="directions__item-title">Лекции</h3>
-                <p class="directions__item-text">Подтяни свои знания в теории музыки</p>
+              <div class="directions__item directions__item--button">
+                <a class="directions__button">Все направления</a>
               </div>
-            </div>
 
-            <div class="directions__item directions__item--button">
-              <a class="directions__button">Все направления</a>
             </div>
 
           </div>
         </div>
-
       </section>
 
       <section class="advantages">
-        <div class="container">
+        <div class="container  advantages__container">
 
           <div class="advantages__list">
 
@@ -123,21 +135,24 @@
               <h2 class="advantages__title">Задаем темп</h2>
             </div>
 
-            <div class="advantages__item advantages__item--staff" style="background-image: url(image/advantages_card_img_1.jpg); background-size: cover; background-position: center;">
-              <div class="advantages__item-content">
-                <h3 class="advantages__item-title">Состав</h3>
-                <p class="advantages__item-text">Учись только у профессионалов</p>
-              </div>
-            </div>
+            <div class="under-title">
 
-            <div class="advantages__item advantages__item--result" style="background-image: url(image/advantages_card_img_2.jpg); background-size: cover;background-position: center;">
-              <div class="advantages__item-content">
-                <h3 class="advantages__item-title">Результат</h3>
-                <p class="advantages__item-text">Выступай на отчетных концертах</p>
+              <div class="advantages__item advantages__item--staff" style="background-image: url(image/advantages_card_img_1.jpg); background-size: cover; background-position: center;">
+                <div class="advantages__item-content">
+                  <h3 class="advantages__item-title">Состав</h3>
+                  <p class="advantages__item-text">Учись только у профессионалов</p>
+                </div>
               </div>
+
+              <div class="advantages__item advantages__item--result" style="background-image: url(image/advantages_card_img_2.jpg); background-size: cover;background-position: center;">
+                <div class="advantages__item-content">
+                  <h3 class="advantages__item-title">Результат</h3>
+                  <p class="advantages__item-text">Выступай на отчетных концертах</p>
+                </div>
+              </div>
+
             </div>
           </div>
-
           <div class="advantages__list">
 
             <div class="advantages__item advantages__item--studio" style="background-image: url(image/advantages_card_img_3.jpg); background-size: cover; background-position: center;">
@@ -148,10 +163,12 @@
             </div>
 
             <div class="advantages__item xsmall-hidden">
-              <div class="advantages__form"></div>
+              <div class="advantages__form">
+                
+              </div>
             </div>
 
-            <div class="advantages__item advantages__item--button">
+            <div class="advantages__item advantages__item--button medium-hidden">
               <button class="advantages__button">Вводный урок</button>
             </div>
 
@@ -168,49 +185,60 @@
           </div>
 
           <div class="video__sliden-slick">
-            <div class="video__slider">
+
+            <div class="video__slider slider__single">
               <img class="video__slider-img" src="image/video_card_img_1.jpg" alt="Зимняя вишня">
-              <p>Зимняя вишня</p>
-              <p>Финальный коцерт</p>
+              <p class="caption__name">Зимняя вишня</p>
+              <p class="caption__description">Финальный коцерт</p>
             </div>
-            <div class="video__slider">
+
+            <div class="video__slider slider__column">
               <img class="video__slider-img" src="image/video_card_img_2.jpg" alt="Ямг Чжо">
-              <p>Ямг Чжо</p>
-              <p>Репетиция сольной партии</p>
+              <p class="caption__name">Ямг Чжо</p>
+              <p class="caption__description">Репетиция сольной партии</p>
             </div>
-            <div class="video__slider">
+
+            <div class="video__slider slider__column">
               <img class="video__slider-img" src="image/video_card_img_3.jpg" alt="Летний штиль">
-              <p>Летний штиль</p>
-              <p>За кулисами концерта</p>
+              <p class="caption__name">Летний штиль</p>
+              <p class="caption__description">За кулисами концерта</p>
             </div>
-            <div class="video__slider">
+
+            <div class="video__slider slider__column">
               <img class="video__slider-img" src="image/video_card_img_4.jpg" alt="Сергей Трофимов">
-              <p>Сергей Трофи</p>
-              <p>Любэ - Выйду в поле с конем</p>
+              <p class="caption__name">Сергей Трофи</p>
+              <p class="caption__description">Любэ - Выйду в поле с конем</p>
             </div>
+
           </div>
         </div>
       </section>
 
       <section class="contacts">
         <div class="container">
+
           <div class="contacts__content">
 
-            <div class="contacts__title-wrap">
-              <h2 class="contacts__title">Ждем тебя</h2>
-            </div>
+            <div class="contacts__wrap">
 
-            <div class="contacts__text-wrap">
-              <address class="contacts__text">СПб, 6-я Линия ВО 42</address>
-              <p class="contacts__text"><a class="contacts__tel" href="tel:+78125565656">+7 (812) 556 56 56</a></p>
+              <div class="contacts__title-wrap">
+                <h2 class="contacts__title">Ждем тебя</h2>
+              </div>
+
+              <div class="contacts__text-wrap">
+                <address class="contacts__text">СПб, 6-я Линия ВО 42</address>
+                <p class="contacts__text"><a class="contacts__tel" href="tel:+78125565656">+7 (812) 556 56 56</a></p>
+              </div>
+
             </div>
 
             <div class="contacts__map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.3331423921848!2d30.276268629984052!3d59.94320700915592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696312598e35719%3A0x3d2eaed177137a41!2zNi3RjyDQu9C40L0uINCSLtCeLiwgNDIsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTkxNzg!5e0!3m2!1sru!2sru!4v1552474219631" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
+
           </div> 
 
-          <div class="contacts__button-wrap">
+          <div class="contacts__button-wrap medium-hidden">
             <button class="contacts__button">Вводный урок</button>
           </div>
 
@@ -221,5 +249,8 @@
     </main>
 
   </div>
+  <script src="js/jquery-3.3.1.min (1).js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
