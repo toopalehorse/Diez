@@ -30,12 +30,12 @@
 
 h1 {
   font-family: 'Prata', sans-serif;
-  font-size: 36px;
+  font-size: 32px;
 }
 
 h2 {
   font-family: 'Prata', sans-serif;
-  font-size: 34px;
+  font-size: 30px;
   color: #000;
   font-weight: normal;
 }
@@ -81,7 +81,7 @@ body{
 .logo-text {
   font-family: 'Prata', sans-serif;
   font-size: 30px;
-  color: #ffd700;
+  color: #eec643;
 }
 
 .main-menu {
@@ -103,6 +103,7 @@ body{
 .main-menu__link {
   text-decoration: none;
   color: #fff;
+  font-size: 16px;
 }
 
 /*PROMO*/
@@ -149,7 +150,7 @@ body{
   text-align: center;
   width: 290px;
   height: 50px;
-  background-color: #ffd700;
+  background-color: #eec643;
   padding: 15px 0; /*можно ли выровнять по вертикали без паддингов?*/
   color: #fff;
   font-size: 18px;
@@ -167,8 +168,8 @@ body{
 .directions__title-wrap {
   margin: 20px 0px;
   padding: 0 15px;
-  border-top: 2px solid #ffd700;
-  border-bottom: 2px solid #ffd700;;
+  border-top: 2px solid #eec643;
+  border-bottom: 2px solid #eec643;;
 }
 
 .directions__title {
@@ -194,7 +195,7 @@ body{
 
 .directions__item-content {
   width: 90%;
-  padding: 35px 10px;
+  padding: 30px 10px;
 }
 
 .directions__item-title {
@@ -224,7 +225,7 @@ body{
   margin: 0;
   height: 13%;
   width: 150px;
-  background-color: #ffd700;
+  background-color: #eec643;
 }
 
 .directions__button {
@@ -241,8 +242,8 @@ body{
 .advantages__title-wrap {
   margin: 10px 0px 20px;
   padding: 0 15px;
-  border-top: 2px solid #ffd700;
-  border-bottom: 2px solid #ffd700;
+  border-top: 2px solid #eec643;
+  border-bottom: 2px solid #eec643;
 }
 
 .advantages__title {
@@ -294,7 +295,7 @@ body{
   margin: 0;
   height: 39%;
   width: 150px;
-  background-color: #ffd700;
+  background-color: #eec643;
 }
 
 .advantages__button {
@@ -311,8 +312,8 @@ body{
 .video__title-wrap {
   margin: 10px 0px 20px;
   padding: 0 15px;
-  border-top: 2px solid #ffd700;
-  border-bottom: 2px solid #ffd700;
+  border-top: 2px solid #eec643;
+  border-bottom: 2px solid #eec643;
 }
 
 .video__title {
@@ -335,10 +336,11 @@ body{
   position: absolute;
   top: 95px;
   left: 35px;
+  font-size: 18px;
 }
 
 .caption__description {
-  font-size: 15px;
+  font-size: 16px;
   position: absolute;
   top: 115px;
   left: 35px;
@@ -370,7 +372,7 @@ body{
   left: 50%;
   width: 20px;
   height: 20px;
-  border-top: 1px solid #ffd700;;
+  border-top: 1px solid #eec643;;
 }
 
 .video__sliden-slick .slick-prev {
@@ -378,7 +380,7 @@ body{
 }
 
 .video__sliden-slick .slick-prev:before {
-  border-left: 1px solid #ffd700;;  
+  border-left: 1px solid #eec643;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
@@ -387,7 +389,7 @@ body{
 }
 
 .video__sliden-slick .slick-next:before {
-  border-right: 1px solid #ffd700;;
+  border-right: 1px solid #eec643;;
   transform: translate(-50%, -50%) rotate(45deg);
 }
 /*slider-end*/
@@ -399,10 +401,9 @@ body{
 .contacts__content
 
 .contacts__title-wrap {
-  margin: 10px 0px 20px;
-  padding: 0 15px;
-  border-top: 2px solid #ffd700;
-  border-bottom: 2px solid #ffd700;
+  margin: 0px 0px 20px;
+  border-top: 2px solid #eec643;
+  border-bottom: 2px solid #eec643;
 }
 
 .contacts__title {
@@ -435,7 +436,7 @@ body{
   text-align: center;
   width: 290px;
   height: 50px;
-  background-color: #ffd700;
+  background-color: #eec643;
   padding: 15px 0; /*можно ли выровнять по вертикали без паддингов?*/
   color: #fff;
   font-size: 18px;
@@ -447,35 +448,34 @@ body{
 }
 /*__________________________________________________________*/
 @media (min-width: 768px) {
-  body{
+  body {
   min-width: 768px;
 }
 
 h1 {
   font-family: 'Prata', sans-serif;
-  font-size: 40px;
+  font-size: 55px;
 }
 
 h2 {
   font-family: 'Prata', sans-serif;
-  font-size: 36px;
+  font-size: 50px;
   color: #000;
   font-weight: normal;
 }
 
 h3 {
   font-family: 'PT Sans', sans-serif;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: normal;
 }
 
 p{
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .container { 
-  width: 1200px;
-  margin: 0 auto;
+  min-width: 1170px;
   display: flex;
   position: relative;
 }
@@ -522,8 +522,7 @@ p{
 
 .main-menu__link {
   text-decoration: none;
-  color: gray;
-  font-size: 20px;
+  color: #021a23;
 }
 
 /*PROMO*/
@@ -538,9 +537,12 @@ p{
   top: -105px;
   margin-bottom: -45px;
 }
-
+.container__promo {
+  align-items: center;
+  justify-content: space-between;
+}
 .promo__content {
-  padding-top: 250px;
+  padding: 110px 0;
   flex-direction: row;
   width: 70%;
 }
@@ -548,23 +550,79 @@ p{
 .promo__title {
   margin: 0;
   font-weight: normal;
-  width: 1100px;
+  width: 90%;
 }
 
 .promo__text {
   padding: 20px 0;
   margin: 0;
   font-weight: normal;
-  width: 50%;
+  width: 59%;
 }
 
-.promo-button__wrap {
-  display: none;
-}
-
-.promo__form {
+/*Общие для формы*/
+.form {
+  position: relative;
   flex-direction: row;
-  width: 30%;
+  width: 23.6%;
+  opacity: 80;
+  color: #000;
+}
+
+.form__container{
+  padding: 10px 20px 0 30px;
+}
+
+.form__content {
+  padding: 40px 0;
+}
+
+.form__item {
+  background-color: transparent;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 0;
+  color: gray;
+  font-size: 20px;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+.form__button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  border: 0;
+  color: #fbf6e5;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.form__title {
+  font-weight: bolder;
+  margin: 10px 0;
+  font-size: 30px;
+}
+.form__text {
+  margin: 10px 0;
+  font-size: 20px;
+}
+/*Модифицированные элементы формы*/
+.form--promo {
+  border: 2px solid #021a23;
+  background-color: #fbf6e5;
+  height: 420px;
+}
+
+.form__title--promo {
+
+}
+.form__item--promo {
+  border-bottom: 2px solid black;
+}
+.form__button--promo {
+  background-color: #021a23;
 }
 
 /*DIRECTIONS*/
@@ -578,7 +636,7 @@ p{
 
 .directions__title-wrap {
   position: absolute;
-  bottom: -71px;
+  bottom: -87px;
   left: 0;
   margin: 0;
   width: 530px;
@@ -586,8 +644,6 @@ p{
   transform: rotate(-90deg);
   transform-origin: 0 0;
   padding: 10px 0;
-  border-top: 2px solid #ffd700;
-  border-bottom: 2px solid #ffd700;
 }
 
 .directions__list {
@@ -646,7 +702,6 @@ p{
   transform: rotate(0deg);
   transform-origin: 0 0;
   width: 23.6%;
-  background-color: #ffd700;
   order: 5;
 }
 /*ADVANTAGES*/
@@ -655,11 +710,13 @@ p{
   height: 530px;
   margin-bottom: 60px;
 }
+.advantages__container {
+  justify-content: space-between;
+}
 
 .advantages__title-wrap {
   flex-direction: column;
   margin: 0 0 30px 0;
-  padding: 10px 15px;
   width: 100%;
 }
 
@@ -669,22 +726,22 @@ p{
 }
 
 .advantages__list {
+  justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
-  width: 46.5%;
-  margin: 0 30px 0 0;
+  width: 48.7%;
   height: 100%;
 }
 
 .under-title {
   display: flex;
   width: 100%;
-  height: 81%;
+  height: 80%;
 }
 
 .advantages__item {
   flex-direction: row;
-  width: 50%;
+  width: 47.5%;
   height: 100%;
 }
 
@@ -693,8 +750,25 @@ p{
 }
 
 .advantages__item--studio {
-  margin-right: 30px;
-  width: 50%;
+  margin: 0;
+  width: 47.5%;
+}
+/*Модифицированные элементы формы*/
+.form--advantages {
+  width: 47.5%;
+  margin-right: 0;
+  border: 2px solid #eec643;
+  background-color: #fff;
+}
+
+.form__title--advantages {
+
+}
+.form__item--advantages {
+  border-bottom: 2px solid #eec643;
+}
+.form__button--advantages {
+  background-color: #eec643;
 }
 
 /*VIDEO*/
@@ -706,7 +780,7 @@ p{
 
 .video__title-wrap {
   position: absolute;
-  bottom: -71px;
+  bottom: -87px;
   left: 0;
   margin: 0;
   width: 530px;
@@ -714,8 +788,6 @@ p{
   transform: rotate(-90deg);
   transform-origin: 0 0;
   padding: 10px 0;
-  border-top: 2px solid #ffd700;
-  border-bottom: 2px solid #ffd700;
 }
 
 .video__sliden-slick {
@@ -742,48 +814,64 @@ p{
   width: 100%;
   height: 100%;
 }
+.slider__single .caption__name {
+  font-size: 30px;
+  top: -10px;
+  left: 40px;
+}
+
+.slider__single .caption__description {
+  font-size: 20px;
+  top: 70px;
+  left: 40px;
+  width: 250px;
+}
+.caption__description-1 , .caption__description-2 {
+  margin: 0;
+}
 
 .caption__name {
+  font-size: 14px;
   font-weight: bold;
   position: absolute;
-  top: 95px;
-  left: 35px;
+  bottom: 0px;
+  left: 10px;
 }
 
 .caption__description {
-  font-size: 15px;
+  font-size: 14px;
   position: absolute;
-  top: 115px;
-  left: 35px;
+  bottom: 0px;
+  left: 10px;
 }
 
 /*CONTACTS*/
 .contacts {
+  margin-top: 30px;
   width: 100%;
   height: 530px;
 }
 
 .contacts__content {
   flex-direction: row;
-  width: 75%;
+  width: 74%;
   height: 100%;
   height: 530px;
   display: flex;
   flex-wrap: wrap;
+  margin-right: 30px;
 }
 
 .contacts__wrap {
   display: flex;
   width: 100%;
-  height: 18%;
-  margin: 10px 0;
+  height: 17%;
 }
 
 .contacts__title-wrap {
   flex-direction: row;
   width: 75%;
-  padding: 0 15px;
-  margin: 0;
+  margin: 0px 0px 0px;
 }
 
 .contacts__text-wrap {
@@ -801,4 +889,20 @@ p{
 .contacts__form {
   flex-direction: row;
   width: 25%;
+}
+/*Модифицированные элементы формы*/
+.form--contacts {
+  margin-right: 0;
+  border: 2px solid #eec643;
+  background-color: #fff;
+}
+
+.form__title--contacts {
+
+}
+.form__item--contacts {
+  border-bottom: 2px solid #eec643;
+}
+.form__button--contacts {
+  background-color: #eec643;
 }
