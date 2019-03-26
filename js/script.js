@@ -12,4 +12,13 @@ $(document).ready(function(){
         $('.video__sliden-slick').slick('unslick')
       }
   }
+
+  $('.accordeon .burger').on('click', function(){
+  $(this).closest('.accordeon').find('.main-menu__list').slideToggle();
+  })
+
+  $('.accordeon .burger').on('click', function(){
+  $(this).closest('.accordeon').find('.active').slideToggle();
+  })
+
 });

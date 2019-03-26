@@ -59,22 +59,24 @@ body{
 /*HEADER*/
 .container { 
   width: 290px;
+  height: 100%;
   margin: 0 auto;
 } /*НЕпонятно, почему исчезает logo*/
 
 .header {
   width: 100%;
-  top: 0px;
   z-index: 1;
+  height: 50px;
 }
 
 .header-wrap {
   display: flex;
   padding-top: 20px;
+  height: 100%;
 }
 
 .logo {
-  z-index: 1;
+  z-index: 2;
   position: absolute;
 }
 
@@ -83,27 +85,106 @@ body{
   font-size: 30px;
   color: #eec643;
 }
-
+/*MENU*/
 .main-menu {
   position: relative;
 }
 
+.burger {
+  position: absolute;
+  right: -290px;
+  bottom: 0;
+}
+
+.burger {
+  z-index: 2;
+  font-size: 0;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+}
+
+.burger:before,
+.burger:after {
+  content: '';
+  transition: all 0.5s;
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: #fff;
+}
+
+.burger:before {
+  top: 0;
+  left: 0;
+}
+
+.burger:after {
+  bottom: 0;
+  left: 23px;
+}
+
+.span-burger:before,
+.span-burger:after {
+  content: '';
+  transition: all 0.5s;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100%;
+  width: 2px;
+  background-color: #fff;
+}
+/*бургер в состоянии открытого меню*/
+/*.span-burger:before{
+  transform: rotate(-135deg);
+}
+
+.span-burger:after{
+  transform: rotate(-45deg);
+}
+
+.burger:before {
+  transform: translate(-100%);
+  opacity: 0;
+}
+
+.burger:after {
+  transform: translate(100%);
+  opacity: 0;
+}*/
+
 .main-menu__list {
+  display: flex;
   z-index: 1;
   position: absolute;
-  display: block;
   list-style: none;
-  /*display: none;*/
+  
+}
+.main-menu__list--mobile {
+  width: 320px;
+  flex-direction: column;
+  top: -35px;
+  left: -15px;
+  background-color: #000;
+  padding: 75px 15px;
+  padding-bottom: 10px;
+  display: none;
 }
 
 .main-menu__item {
-
+  padding-bottom: 15px;
 }
 
 .main-menu__link {
   text-decoration: none;
   color: #fff;
   font-size: 16px;
+  text-transform: uppercase;
 }
 
 /*PROMO*/
@@ -112,11 +193,12 @@ body{
   display: flex;
   background-image: url(../image/xs-bg_main.jpg);
   background-repeat: no-repeat;
+  background-position-x: -37px;
   background-size: cover;
   width: 320px;
   height: 100vh;
   position: relative;
-  top: -50px;
+  top: -55px;
   z-index: 0;
   min-height: 600px;
 }
@@ -508,15 +590,24 @@ p{
 }
 
 .main-menu__list {
-  display: flex;
   position: relative;
   list-style: none;
   justify-content: flex-end;
 }
 
+.main-menu__list--mobile {
+  width: 100%;
+  flex-direction: row;
+  top: -15px;
+  left: 0;
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+}
+
 .main-menu__item {
   flex-direction: row;
-  padding: 0 10px;
+  padding: 0 15px;
   text-transform: uppercase;
 }
 
@@ -524,17 +615,21 @@ p{
   text-decoration: none;
   color: #021a23;
 }
+.burger {
+  display: none;
+}
 
 /*PROMO*/
 .promo {
-  height: 790px;
+  height: 760px;
   width: 1280px; 
   display: flex;
   background-image: url(../image/bg_main.jpg);
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
+  background-position-x: 0px;
   position: relative;
-  top: -105px;
+  top: -70px;
   margin-bottom: -45px;
 }
 .container__promo {
@@ -565,7 +660,7 @@ p{
   position: relative;
   flex-direction: row;
   width: 23.6%;
-  opacity: 80;
+  opacity: 0.9;
   color: #000;
 }
 
@@ -847,7 +942,7 @@ p{
 
 /*CONTACTS*/
 .contacts {
-  margin-top: 30px;
+  margin-top: 60px;
   width: 100%;
   height: 530px;
 }
