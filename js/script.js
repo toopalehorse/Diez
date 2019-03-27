@@ -13,12 +13,9 @@ $(document).ready(function(){
       }
   }
 
-  $('.accordeon .burger').on('click', function(){
-  $(this).closest('.accordeon').find('.main-menu__list').slideToggle();
-  })
-
-  $('.accordeon .burger').on('click', function(){
-  $(this).closest('.accordeon').find('.active').slideToggle();
+  $('.main-menu').click(function(){
+  $(this).toggleClass('burger--open');
+  $('.main-menu__list').toggleClass('main-menu--open');
   })
 
 });
