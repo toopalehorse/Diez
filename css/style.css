@@ -58,10 +58,13 @@ body{
 
 /*HEADER*/
 .container { 
-  width: 290px;
   height: 100%;
   margin: 0 auto;
-} /*НЕпонятно, почему исчезает logo*/
+} 
+
+.container-header {
+  width: 290px;
+}
 
 .header {
   width: 100%;
@@ -80,11 +83,11 @@ body{
   position: absolute;
 }
 
-.logo-text {
-  font-family: 'Prata', sans-serif;
-  font-size: 30px;
-  color: #eec643;
+.logo__img {
+  position: absolute;
+  z-index: 3
 }
+
 /*MENU*/
 .main-menu {
   position: relative;
@@ -164,8 +167,6 @@ body{
   position: absolute;
   list-style: none;
   
-}
-.main-menu__list--mobile {
   width: 320px;
   flex-direction: column;
   top: -35px;
@@ -189,11 +190,11 @@ body{
 
 /*PROMO*/
 .promo {
+  padding:0 15px;
   margin: 0 auto;
   display: flex;
   background-image: url(../image/xs-bg_main.jpg);
   background-repeat: no-repeat;
-  background-position-x: -37px;
   background-size: cover;
   width: 320px;
   height: 100vh;
@@ -241,7 +242,7 @@ body{
 
 /*DIRECTIONS*/
 .directions {
-  margin: 20px;
+  padding: 20px 15px;
 }
 
 .advantages__container{
@@ -249,8 +250,10 @@ body{
 }
 
 .directions__title-wrap {
-  margin: 10px 0px;
-  padding: 0 15px;
+  width: 80%;
+  margin: 10px 0px 15px;
+  padding-left: 10px;
+  padding-right: 40px;
   border-top: 2px solid #eec643;
   border-bottom: 2px solid #eec643;;
 }
@@ -260,33 +263,33 @@ body{
 }
 
 .directions__list {
+  width: 100%;
   position: relative;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.directions-row {
-  width: 100%;
-  margin: 0;
 }
 
 .directions__item {
   width: 100%;
   height: 150px;
-  margin: 10px 0;
+  margin-bottom: 15px;
 }
 
 .directions__item-content {
   width: 90%;
-  padding: 30px 10px;
+  height: 100%;
+  padding: 25px 10px;
 }
 
 .directions__item-title {
   margin: 0;
+  font-weight: bold;
 }
 
 .directions__item-text {
   margin: 0;
+  flex-direction: column;
 }
 
 .xsmall-hidden {
@@ -295,37 +298,39 @@ body{
 
 .directions__item--piano {
   margin: 0;
-  width: 75%;
+  width: 72%;
 }
 
 .directions__item--button {
-  padding: 10px 15px;
-  bottom: -62px;
-  right: -88px;
-  position: absolute;
-  transform: rotate(-90deg);
-  transform-origin: 0 0;
+  position: relative;
   margin: 0;
-  height: 13%;
-  width: 150px;
+  overflow: hidden;
+  width: 22%;
   background-color: #eec643;
 }
 
 .directions__button {
+  position: absolute;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  bottom: -40px;
   color: black;
   font-size: 16px;
+  padding-top: 10px;
   text-transform: uppercase;
 }
 
 /*ADVANTAGES*/
 .advantages {
   display: flex;
-  margin-top: 20px;
+  padding: 20px 15px;
+  padding-top: 0;
 }
 
 .advantages__title-wrap {
-  margin: 10px 0px 20px;
-  padding: 0 15px;
+  margin: 10px 0px 15px;
+  padding-left: 10px;
+  padding-right: 40px;
   border-top: 2px solid #eec643;
   border-bottom: 2px solid #eec643;
 }
@@ -334,26 +339,29 @@ body{
   margin: 0;
 }
 
-.advantages__list {
+.under-title {
   width: 100%;
-  flex-wrap: wrap;
+}
+
+.advantages__list {
+  display: flex;
   justify-content: space-between;
-  position: relative;
+  flex-wrap: wrap;
 }
 
 .advantages__item {
-  width: 100%;
   height: 150px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .advantages__item-content {
-  width: 240px;
-  padding: 35px 10px;
+  width: 210px;
+  padding: 30px 10px;
 }
 
 .advantages__item-title {
   margin: 0;
+  font-weight: bold;
 }
 
 .advantages__item-text {
@@ -365,25 +373,26 @@ body{
 }
 
 .advantages__item--studio {
-  margin-right: 10px;
-  width: 75%;
+  width: 72%;
+  margin-bottom: 0;
 }
 
 .advantages__item--button {
-  padding: 10px;
-  bottom: -58px;
-  right: -88px;
-  position: absolute;
-  transform: rotate(-90deg);
-  transform-origin: 0 0;
+  position: relative;
   margin: 0;
-  height: 39%;
-  width: 150px;
+  overflow: hidden;
+  width: 22%;
   background-color: #eec643;
 }
 
 .advantages__button {
+  position: absolute;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  bottom: -40px;
+  font-size: 16px;
   text-align: left;
+  padding-top: 10px;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -396,8 +405,10 @@ body{
   margin: 20px;
 }
 .video__title-wrap {
-  margin: 10px 0px 20px;
-  padding: 0 15px;
+  width: 80%;
+  margin: 10px 0px 15px;
+  padding-left: 10px;
+  padding-right: 40px;
   border-top: 2px solid #eec643;
   border-bottom: 2px solid #eec643;
 }
@@ -406,21 +417,23 @@ body{
   margin: 0;
 }
 
-.video__sliden-slick
+.video__sliden-slick {
+  position: relative;
+}
 
 .video__slider {
   position: relative;
 }
 
 .video__slider-img {
-  width: 250px;
+  width: 85%;
   margin: 0 auto;
 }
 
 .caption__name {
   font-weight: bold;
   position: absolute;
-  top: 95px;
+  top: 90px;
   left: 35px;
   font-size: 18px;
 }
@@ -483,13 +496,17 @@ body{
 /*CONTACTS*/
 
 .contacts {
-  margin-top: 30px;
+  padding: 20px 15px;
+  padding-top: 0;
 }
 
 .contacts__content
 
 .contacts__title-wrap {
-  margin: 0px 0px 20px;
+  width: 80%;
+  margin: 10px 0px 15px;
+  padding-left: 10px;
+  padding-right: 40px;
   border-top: 2px solid #eec643;
   border-bottom: 2px solid #eec643;
 }
@@ -538,7 +555,6 @@ body{
 /*__________________________________________________________*/
 @media (min-width: 768px) {
   body {
-  min-width: 768px;
 }
 
 h1 {
@@ -564,7 +580,7 @@ p{
 }
 
 .container { 
-  min-width: 1170px;
+  width: 1170px;
   display: flex;
   position: relative;
 }
@@ -600,9 +616,6 @@ p{
   position: relative;
   list-style: none;
   justify-content: flex-end;
-}
-
-.main-menu__list--mobile {
   width: 100%;
   flex-direction: row;
   top: -15px;
@@ -634,15 +647,15 @@ p{
   background-image: url(../image/bg_main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: 0px;
   position: relative;
   top: -70px;
-  margin-bottom: -45px;
 }
+
 .container__promo {
   align-items: center;
   justify-content: space-between;
 }
+
 .promo__content {
   padding: 110px 0;
   flex-direction: row;
@@ -689,6 +702,7 @@ p{
   -webkit-appearance: none;
   border-radius: 0;
 }
+
 .form__button {
   position: absolute;
   bottom: 0;
@@ -701,15 +715,18 @@ p{
   font-size: 20px;
   text-transform: uppercase;
 }
+
 .form__title {
   font-weight: bolder;
   margin: 10px 0;
   font-size: 30px;
 }
+
 .form__text {
   margin: 10px 0;
   font-size: 20px;
 }
+
 /*Модифицированные элементы формы*/
 .form--promo {
   border: 2px solid #021a23;
@@ -720,9 +737,11 @@ p{
 .form__title--promo {
 
 }
+
 .form__item--promo {
   border-bottom: 2px solid black;
 }
+
 .form__button--promo {
   background-color: #021a23;
 }
@@ -731,35 +750,36 @@ p{
 .directions {
   position: relative;
   display: flex;
-  justify-content: flex-end;
   height: 530px;
-  margin-bottom: 60px;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.directions__container {
+  height: 100%;
+  justify-content: space-between;
 }
 
 .directions__title-wrap {
   position: absolute;
-  bottom: -87px;
+  bottom: -70px;
   left: 0;
   margin: 0;
   width: 530px;
   flex-direction: row;
   transform: rotate(-90deg);
   transform-origin: 0 0;
-  padding: 10px 0;
+  padding: 0;
 }
 
 .directions__list {
-  padding-left: 8.333%;
+  align-content: space-between;
+  width: 100%;
+  padding-left: 8.546%;
+  justify-content: space-between;
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-}
-
-.directions-row {
-  width: 91%;
-  display: flex;
-  margin-bottom: 30px;
 }
 
 .directions__title{
@@ -768,97 +788,130 @@ p{
 
 .directions__item {
   flex-direction: row;
-  height: 250px;
-  margin: 0 30px 0 0;
+  height: 47.17%;
+  margin: 0;
+}
+
+.directions__item-content {
+  width: 310px;
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.directions__item-price {
+  font-weight: bold;
 }
 
 .directions__button {
   color: #fff;
+  padding: 0;
+  font-weight: bold;
+  text-transform: none;
+  position: static;
+  transform: rotate(0deg);
+  font-size: 30px;
   text-transform: none;
 }
 
 .directions__item--guitar {
-  width: 41.665%;
+  width: 43.965%;
   order: 1;
 }
 
 .directions__item--singing {
   margin-right: 0;
-  width: 50%;
+  width: 53.268%;;
   order: 2;
 }
 
 .directions__item--piano {
-  width: 41.665%;
+  width: 43.965%;
   order: 3;
 }
 
 .directions__item--lections {
   margin-top: 0;
-  width: 23.6%;
+  width: 25.233%;
   order: 4;
 }
 
 .directions__item--button {
-  position: static;
-  transform: rotate(0deg);
-  transform-origin: 0 0;
-  width: 23.6%;
+  padding: 15px 30px;
+  width: 25.233%;
   order: 5;
 }
+
 /*ADVANTAGES*/
 .advantages {
+  margin-top: 90px;
   display: flex;
   height: 530px;
-  margin-bottom: 60px;
 }
+
 .advantages__container {
   justify-content: space-between;
 }
 
 .advantages__title-wrap {
   flex-direction: column;
-  margin: 0 0 30px 0;
+  margin: 0;
   width: 100%;
+  height: 13.207%;
 }
 
 .advantages__title {
   margin: 0;
-  height: 18.333%;
 }
 
 .advantages__list {
-  justify-content: space-between;
+  flex-direction: column;
   display: flex;
   flex-wrap: wrap;
-  width: 48.7%;
+  width: 48.718%;
   height: 100%;
+}
+
+.advantages__list--2 {
+  flex-direction: row;
 }
 
 .under-title {
   display: flex;
+  justify-content: space-between;
   width: 100%;
-  height: 80%;
+  height: 81.133%;
 }
 
 .advantages__item {
   flex-direction: row;
-  width: 47.5%;
+  width: 47.368%;
   height: 100%;
 }
 
+.advantages__item-content {
+  width: 100%;
+  padding: 15px 10px 0 25px;
+}
+
+.advantages__item-title {
+  padding-bottom: 20px;
+}
 .advantages__item--staff {
-  margin-right: 30px;
+  margin: 0px;
 }
 
 .advantages__item--studio {
   margin: 0;
-  width: 47.5%;
+  width: 47.368%;
 }
+
 /*Модифицированные элементы формы*/
 .form--advantages {
-  width: 47.5%;
-  margin-right: 0;
+  height: 100%;
+  width: 47.368%;
+  margin: 0;
   border: 2px solid #eec643;
   background-color: #fff;
 }
@@ -866,34 +919,42 @@ p{
 .form__title--advantages {
 
 }
+
 .form__item--advantages {
   border-bottom: 2px solid #eec643;
 }
+
 .form__button--advantages {
   background-color: #eec643;
 }
 
 /*VIDEO*/
 .video {
+  margin: 90px 0;
   position: relative;
   display: flex;
-  height: : 530px;
+  height: 530px;
+}
+
+.video__container {
+  justify-content: flex-end;
 }
 
 .video__title-wrap {
   position: absolute;
-  bottom: -87px;
+  bottom: -70px;
   left: 0;
   margin: 0;
   width: 530px;
   flex-direction: row;
   transform: rotate(-90deg);
   transform-origin: 0 0;
-  padding: 10px 0;
 }
 
 .video__sliden-slick {
-  padding-left: 8.333%;
+  justify-content: space-between;
+  align-content: space-between;
+  padding-left: 8.547%;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -902,13 +963,13 @@ p{
 }
 
 .slider__single {
-  width: 66%;
-  margin: 0;
+  height: 100%;
+  width: 72.1%;
 }
 
 .slider__column {
-  flex-direction: column;
-  width: 26.6%;
+  width: 25.174%;
+  height: 29.56%;
 }
 
 .video__slider-img {
@@ -933,7 +994,7 @@ p{
 }
 
 .caption__name {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   position: absolute;
   bottom: 0px;
@@ -953,14 +1014,17 @@ p{
   height: 530px;
 }
 
+.contacts__container {
+  justify-content: space-between;
+}
+
 .contacts__content {
   flex-direction: row;
-  width: 74%;
+  width: 74.3591%;
   height: 100%;
-  height: 530px;
   display: flex;
   flex-wrap: wrap;
-  margin-right: 30px;
+  margin-right: 0px;
 }
 
 .contacts__wrap {
@@ -989,18 +1053,21 @@ p{
 
 .contacts__form {
   flex-direction: row;
-  width: 25%;
+  width: 23.0769%;
 }
+
 /*Модифицированные элементы формы*/
 .form--contacts {
   margin-right: 0;
+  width: 23.0769%;
   border: 2px solid #eec643;
   background-color: #fff;
 }
 
 .form__title--contacts {
-
+  color: #eec643;
 }
+
 .form__item--contacts {
   border-bottom: 2px solid #eec643;
 }

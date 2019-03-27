@@ -11,11 +11,11 @@
 <body>
 
   <header class="header">
-    <div class="container">
+    <div class="container container-header">
       <div class="header-wrap">
 
         <div class="logo">
-          <span class="logo-text">Diez</span>
+          <img class="logo__img" src="image/Diez.svg" alt="Логотип">
         </div>
 
         <nav class="main-menu">
@@ -25,7 +25,7 @@
               <span class="span-burger"></span>
             </button>
 
-            <ul class="main-menu__list main-menu__list--mobile">
+            <ul class="main-menu__list">
               <li class="main-menu__item">
                 <a href="#" class="main-menu__link">Направления</a>
               </li>
@@ -92,21 +92,21 @@
 
       <section class="directions">
 
-        <div class="container">
+        <div class="container directions__container">
 
           <div class="directions__title-wrap">
             <h2 class="directions__title">Растим музыкантов</h2>
           </div>
 
           <div class="directions__list">
-            
-            <div class="directions-row">
 
               <div class="directions__item directions__item--singing" style="background-image: url(image/directions_card_img_2.jpg); background-size: cover; background-position: center;">
                 <div class="directions__item-content">
-                  <h3 class="directions__item-title">Вокал</h3>
-                  <p class="directions__item-text xsmall-hidden">Академический, рок, эстрадный, джазовый  
-                  </p>
+                  <div class="direction__item-about">
+                    <h3 class="directions__item-title">Вокал</h3>
+                    <p class="directions__item-text xsmall-hidden">Академический, рок, эстрадный, джазовый  
+                    </p>
+                  </div>
                   <p class="directions__item-text medium-hidden">Пой как Селин Дион и Эми Вайнхаус  
                   </p>
                 </div>
@@ -114,39 +114,40 @@
 
               <div class="directions__item directions__item--guitar" style="background-image: url(image/directions_card_img_1.jpg); background-size: cover;">
                 <div class="directions__item-content">
-                  <h3 class="directions__item-title">Гитара</h3>
-                  <p class="directions__item-text xsmall-hidden">Хочешь играть как Джимми Хендрикс, Би Би Кинг или Андрес Сеговия - мы научим 
-                  </p>
-                  <p class="directions__item-text xsmall-hidden">1 урок от 800Р 
-                  </p>
-                  <p class="directions__item-text">Начни играть, как Джими Хендрикс 
+                  <div class="direction__item-about">
+                    <h3 class="directions__item-title">Гитара</h3>
+                    <p class="directions__item-text xsmall-hidden">Хочешь играть как Джимми Хендрикс, Би Би Кинг или Андрес Сеговия - мы научим 
+                    </p>
+                  </div>
+                    <p class="directions__item-text directions__item-price xsmall-hidden">1 урок от 800Р 
+                    </p>
+                  <p class="directions__item-text medium-hidden">Начни играть, как Джими Хендрикс 
                   </p>
                 </div>
               </div>
 
-            </div>
-
-            <div class="directions-row">
               <div class="directions__item directions__item--piano" style="background-image: url(image/directions_card_img_3.jpg); background-size: cover;">
                 <div class="directions__item-content">
-                  <h3 class="directions__item-title">Фортепиано</h3>
-                  <p class="directions__item-text xsmall-hidden">Академический, рок, эстрадный, джазовый</p>
-                  <p class="directions__item-text">Чувствуй клавиши, как Людовико Эйнауди</p>
+                  <div class="direction__item-about">
+                   <h3 class="directions__item-title">Фортепиано</h3>
+                   <p class="directions__item-text xsmall-hidden">Академический, рок, эстрадный, джазовый</p>
+                   <p class="directions__item-text medium-hidden">Чувствуй клавиши, как Людовико Эйнауди</p>
+                 </div>
                 </div>
               </div>
 
               <div class="directions__item directions__item--lections xsmall-hidden" style="background-image: url(image/directions_card_img_4.jpg); background-size: cover;">
                 <div class="directions__item-content">
-                  <h3 class="directions__item-title">Лекции</h3>
-                  <p class="directions__item-text">Подтяни свои знания в теории музыки  </p>
+                  <div class="direction__item-about">
+                    <h3 class="directions__item-title">Лекции</h3>
+                    <p class="directions__item-text">Подтяни свои знания в теории музыки  </p>
+                  </div>
                 </div>
               </div>
 
               <div class="directions__item directions__item--button">
                 <a class="directions__button">Все направления</a>
               </div>
-
-            </div>
 
           </div>
         </div>
@@ -166,25 +167,28 @@
               <div class="advantages__item advantages__item--staff" style="background-image: url(image/advantages_card_img_1.jpg); background-size: cover; background-position: center;">
                 <div class="advantages__item-content">
                   <h3 class="advantages__item-title">Состав</h3>
-                  <p class="advantages__item-text">Учись только у профессионалов</p>
+                  <p class="advantages__item-text medium-hidden">Учись только у профессионалов</p>
+                  <p class="advantages__item-text xsmall-hidden">Тебя будут обучать  профессионалы с высшим музыкальным образованием</p>
                 </div>
               </div>
 
               <div class="advantages__item advantages__item--result" style="background-image: url(image/advantages_card_img_2.jpg); background-size: cover;background-position: center;">
                 <div class="advantages__item-content">
                   <h3 class="advantages__item-title">Результат</h3>
-                  <p class="advantages__item-text">Выступай на отчетных концертах</p>
+                  <p class="advantages__item-text medium-hidden">Выступай на отчетных концертах</p>
+                  <p class="advantages__item-text xsmall-hidden">Выступи на отчетном концерте через три месяца обучения</p>
                 </div>
               </div>
 
             </div>
           </div>
-          <div class="advantages__list">
+          <div class="advantages__list advantages__list--2">
 
             <div class="advantages__item advantages__item--studio" style="background-image: url(image/advantages_card_img_3.jpg); background-size: cover; background-position: center;">
               <div class="advantages__item-content">
                 <h3 class="advantages__item-title">Студия</h3>
-                <p class="advantages__item-text">Записывай песни каждый месяц</p>
+                <p class="advantages__item-text medium-hidden">Записывай песни каждый месяц</p>
+                <p class="advantages__item-text xsmall-hidden">Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</p>
               </div>
             </div>
 
@@ -222,7 +226,7 @@
 
       <section class="video">
 
-        <div class="container">
+        <div class="container video__container">
 
           <div class="video__title-wrap">
             <h2 class="video__title">В стенах школы</h2>
@@ -233,7 +237,7 @@
             <div class="video__slider slider__single">
               <img class="video__slider-img" src="image/video_card_img_1.jpg" alt="Зимняя вишня">
               <p class="caption__name">Зимняя вишня</p>
-              <p class="caption__description medium-hidden">Финальный коцерт</p>
+              <p class="caption__description medium-hidden">Финальный коцерт 2018 года</p>
               <div class="caption__description xsmall-hidden">
                 <p class="caption__description-1">Заключительный зимний концерт 2017 года</p>
                 <p class="caption__description-2">выступало 97 учеников</p>
@@ -263,7 +267,7 @@
       </section>
 
       <section class="contacts">
-        <div class="container">
+        <div class="container contacts__container">
 
           <div class="contacts__content">
 
@@ -281,7 +285,7 @@
             </div>
 
             <div class="contacts__map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.3331423921848!2d30.276268629984052!3d59.94320700915592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696312598e35719%3A0x3d2eaed177137a41!2zNi3RjyDQu9C40L0uINCSLtCeLiwgNDIsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTkxNzg!5e0!3m2!1sru!2sru!4v1552474219631" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <iframe src="https://yandex.ru/map-widget/v1/-/CCqpJFKh" width="100%" height="100%" frameborder="0" allowfullscreen="true"></iframe>
             </div>
 
           </div> 
